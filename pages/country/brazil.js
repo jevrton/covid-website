@@ -3,7 +3,6 @@ import styles from '../../styles/Home.module.css'
 import fetch from 'isomorphic-unfetch'
 
 export default function Home(props){
-  console.log("data", props)
   return (
     <div className={styles.container}>
       <Head>
@@ -38,6 +37,10 @@ export default function Home(props){
             <p>{props.totalTests} tests</p>
             <p>{props.critical} critical</p>
           </div>
+          <a href='../countries' className={styles.card}>
+            <h3>&larr; back</h3>
+            <p>go back to countries list</p>
+          </a>
         </div>
       </main>
       <footer className={styles.footer}>

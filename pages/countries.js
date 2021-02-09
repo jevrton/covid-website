@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import fetch from 'isomorphic-unfetch'
 
 export default function Home(){
     return (
@@ -21,17 +20,21 @@ export default function Home(){
             <h3>Brazil &rarr;</h3>
             <p>open more infos</p>
           </a>
-          <div className={styles.card}>
+          <a href='/country/eua' className={styles.card}>
             <h3>United States of America &rarr;</h3>
             <p>open more infos</p>
-          </div>
-          <div className={styles.card}>
+          </a>
+          <a href='/country/china' className={styles.card}>
             <h3>China &rarr;</h3>
             <p>open more infos</p>
-          </div>
+          </a>
           <a href='/countries' className={styles.card}>
             <h3>Countries &rarr;</h3>
             <p>open more infos</p>
+          </a>
+          <a href='/' className={styles.card}>
+            <h3>&larr; back</h3>
+            <p>go back to home page</p>
           </a>
         </div>
       </main>
