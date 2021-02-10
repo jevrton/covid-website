@@ -32,8 +32,8 @@ export default function Home(){
             <h3>Portugal &rarr;</h3>
             <p>open more infos</p>
           </a>
-          <a href='/countries' className={styles.card}>
-            <h3>Countries &rarr;</h3>
+          <a href='/country/germany' className={styles.card}>
+            <h3>Germany &rarr;</h3>
             <p>open more infos</p>
           </a>
           <a href='/' className={styles.card}>
